@@ -4,20 +4,29 @@ public class student {
     private String sid;
     private String name;
     private String class_name ;
-
     private String department;
     private String qq_num;
     private String phone_num;
     private String selection_status;
     private String account_status;
+    private String password;
 
-    public student(String studentId, String name, String className, String phone, String qq, String department) {
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public student(String studentId, String name, String className, String phone, String qq, String department,String password) {
         this.sid = studentId;
         this.name = name;
         this.class_name = className;
         this.phone_num = phone;
         this.qq_num = qq;
         this.department = department;
+        this.password = password;
     }
 
     public String getClass_name() {

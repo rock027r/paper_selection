@@ -9,6 +9,15 @@ public class teacher {
     private Integer guide_num;
     private Integer paper_num;
     private String account_status;
+    private String password;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public String getJid() {
         return jid;
@@ -72,5 +81,16 @@ public class teacher {
 
     public void setAccount_status(String account_status) {
         this.account_status = account_status;
+    }
+    public teacher(String jobId,String name,Integer guide,Integer paper,String qq,String phone,String department,String password)
+    {
+        this.jid = jobId;
+        this.name = name;
+        this.guide_num = guide;
+        this.paper_num = paper;
+        this.qq_num = qq;
+        this.phone_num = phone;
+        this.department = department;
+        this.password = password;
     }
 }
